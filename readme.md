@@ -3,17 +3,27 @@ Run a spring boot webapp that simply returns a "Hello" style message when callin
 
 ## Docker commands to build, run and clean up
 
-## Build image from a jar
+### Build image from a jar
+```
 docker build . -t demo/helloworld --build-arg JAR_FILE=target/helloworld-0.0.1-SNAPSHOT.jar
+```
 
-## Run container in deamon mode with name and port
+### Run container in deamon mode with name and port
+```
 docker run -p 8080:8080 -d --name=myhelloworld demo/helloworld
+```
 
-## Stop a running container
+### Stop a running container
+```
 docker stop myhelloworld
+```
 
-## Remove the container
+### Remove the container
+```
 docker rm myhelloworld
+```
 
-## Remove the image
+### Remove the image
+```
 docker image rm demp/helloworld
+```
