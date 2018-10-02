@@ -25,5 +25,5 @@ docker rm myhelloworld
 
 ### Remove the image
 ```
-docker image rm demp/helloworld
+docker image rm demo/helloworld
 ```
