@@ -9,6 +9,8 @@ docker build . -t demo/helloworld --build-arg JAR_FILE=target/helloworld-0.0.1-S
 ## Run container in deamon mode with name and port
 docker run -p 8080:8080 -d --name=myhelloworld demo/helloworld
 
+docker run -d -p 8080:8080 -v hellovol:/logback  --name=myhelloworld demo/helloworld
+
 ## Stop a running container
 docker stop myhelloworld
 
